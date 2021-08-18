@@ -1,0 +1,81 @@
+:root {
+  --desktop-width: 1200px;
+  --tablet-width: 900px;
+  --mobile-width: 600px;
+  --hover-link-color: #834e12;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 250px;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover,
+a:focus {
+  color: var(--hover-link-color);
+}
+
+.container {
+  max-width: var(--desktop-width);
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-contacts-item {
+  padding: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .header-contacts {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-nav {
+    flex-direction: column;
+  }
+}
