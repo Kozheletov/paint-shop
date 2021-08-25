@@ -1,8 +1,12 @@
+@import "normalize.css";
+@import "../fonts/icomoon/style.css";
+
 :root {
   --desktop-width: 1200px;
   --tablet-width: 900px;
   --mobile-width: 600px;
   --main-color: #4e3a24;
+  --focus-color-link: #0c0c0b;
 }
 
 *,
@@ -25,12 +29,12 @@ ul {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--main-color);
 }
 
 a:hover,
 a:focus {
-  color: var(--main-color);
+  color: var(--focus-color-link);
 }
 
 .container {
@@ -70,7 +74,7 @@ a:focus {
 }
 
 .header-contacts-item {
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 @media screen and (max-width: 800px) {
@@ -102,7 +106,7 @@ a:focus {
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: url("img/hero-bg.webp");
+  background-image: url("../img/hero-bg.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
