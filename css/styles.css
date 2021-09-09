@@ -15,6 +15,39 @@
   box-sizing: border-box;
 }
 
+.section {
+  margin-bottom: 80px;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.container {
+  max-width: var(--desktop-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   min-width: 250px;
   font-family: "Montserrat", sans-serif;
@@ -37,23 +70,7 @@ a:focus {
   color: var(--focus-color-link);
 }
 
-.container {
-  max-width: var(--desktop-width);
-  margin: 0 auto;
-  padding: 0 10px;
-}
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 .header {
   padding: 10px 0;
@@ -148,4 +165,30 @@ a:focus {
   .hero-description {
     font-size: 16px;
   }
+}
+
+/* section advanteges */
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+  gap: 15px;
+}
+
+.advanteges-grid__item {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.advantages-grid__icon {
+  width: 18px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advanteges-grid__text {
+  font-size: 18px;
 }
