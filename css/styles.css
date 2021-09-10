@@ -192,3 +192,80 @@ a:focus {
 .advanteges-grid__text {
   font-size: 18px;
 }
+
+/* swiper */
+
+.swiper {
+  max-width: 780px;
+  min-height: 380px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--main-color);
+  top: 80%;
+}
+
+.swiper-button-prev {
+  left: 50%;
+  transform: translate(-200%);
+}
+
+.swiper-button-next {
+  right: 50%;
+  transform: translate(200%);
+}
+
+.slide-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(380px, 1fr));
+  gap: 20px;
+}
+
+.slide-title {
+  margin-bottom: 0;
+}
+
+.slide-text {
+  margin-bottom: 0;
+}
+
+.slide-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.slide-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .swiper {
+    max-width: 680px;
+    min-height: 380px;
+  }
+  
+  .slide-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .slide-image {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .slide-description {
+    align-items: flex-start;
+  }
+}

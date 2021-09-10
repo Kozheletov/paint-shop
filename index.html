@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="css/styles.css" />
   <title>Orel paints</title>
 </head>
@@ -57,7 +59,62 @@
       </ul>
     </section>
 
+    <section class="popular section container">
+      <h2 class="section-title">Популярные товары</h2>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="slide-wrapper">
+              <div class="slide-description">
+                <h3 class="slide-title">Parade Classic W3</h3>
+                <p class="slide-text">Краска для стен и потолков акриловая</p>
+                <p class="slide-size">Фасовка: 2,5 л; 5 л; 10 л</p>
+              </div>
+              <div class="slide-image">
+                <img src="img/paint1.jpg" alt="Parade Classic W3">
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-wrapper">
+              <div class="slide-description">
+                <h3 class="slide-title">Parade Classic W3</h3>
+                <p class="slide-text">Краска для стен и потолков акриловая</p>
+                <p class="slide-size">Фасовка: 2,5 л; 5 л; 10 л</p>
+              </div>
+              <div class="slide-image">
+                <img src="img/paint1.jpg" alt="Parade Classic W3">
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-wrapper">
+              <div class="slide-description">
+                <h3 class="slide-title">Parade Classic W3</h3>
+                <p class="slide-text">Краска для стен и потолков акриловая</p>
+                <p class="slide-size">Фасовка: 2,5 л; 5 л; 10 л</p>
+              </div>
+              <div class="slide-image">
+                <img src="img/paint1.jpg" alt="Parade Classic W3">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+    </section>
+
   </main>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
