@@ -169,6 +169,12 @@ a:focus {
 
 /* section advanteges */
 
+.advantages {
+  border: 1px solid var(--main-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .advantages-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
@@ -268,4 +274,28 @@ a:focus {
   .slide-description {
     align-items: flex-start;
   }
+}
+
+.reviews {
+  border: 1px solid var(--main-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(379px, 1fr) );
+  gap: 20px;
+}
+
+.reviews-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews-item blockquote {
+  margin-right: 0;
+  margin-left: 0;
 }
