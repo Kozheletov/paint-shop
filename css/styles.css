@@ -299,3 +299,24 @@ a:focus {
   margin-right: 0;
   margin-left: 0;
 }
+
+.map {
+  padding-bottom: 10px;
+}
+
+.page-footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer-copy {
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 610px) {
+  .footer-contacts {
+    flex-direction: column-reverse;
+  }
+}
