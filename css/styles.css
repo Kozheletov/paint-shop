@@ -29,6 +29,13 @@
   text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  .section-title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
 .container {
   max-width: var(--desktop-width);
   margin-left: auto;
@@ -197,82 +204,7 @@ a:focus {
   font-size: 18px;
 }
 
-/* swiper */
-
-.swiper {
-  max-width: 780px;
-  min-height: 380px;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  color: var(--main-color);
-  top: 80%;
-}
-
-.swiper-button-prev {
-  left: 50%;
-  transform: translate(-200%);
-}
-
-.swiper-button-next {
-  right: 50%;
-  transform: translate(200%);
-}
-
-.slide-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(380px, 1fr));
-  gap: 20px;
-}
-
-.slide-title {
-  margin-bottom: 0;
-}
-
-.slide-text {
-  margin-bottom: 0;
-}
-
-.slide-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.slide-description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 800px) {
-  .swiper {
-    max-width: 680px;
-    min-height: 380px;
-  }
-
-  .slide-wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .slide-image {
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .slide-description {
-    align-items: flex-start;
-  }
-}
+/* reviews */
 
 .reviews {
   border: 1px solid var(--main-color);
@@ -321,4 +253,30 @@ a:focus {
   .section {
     margin-bottom: 40px;
   }
+}
+
+.catalog__card-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+@media screen and (max-width: 410px) {
+  .catalog__card-columns {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+.catalog__card-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.catalog__card-list {
+  padding-left: 20px;
+  list-style-type: square;
+}
+
+.catalog__card-item:not(:last-child) {
+  margin-bottom: 10px;
 }
