@@ -234,6 +234,17 @@ a:focus {
   padding-bottom: 10px;
 }
 
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-container img {
+  max-width: 100%;
+  height: auto;
+}
+
 .page-footer {
   padding-top: 15px;
   padding-bottom: 15px;

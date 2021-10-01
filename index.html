@@ -1,149 +1,157 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Краски в Орле</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <title>Краски в Орле</title>
-</head>
+  <body>
+    <header class="header container">
+      <nav class="header-nav">
+        <div class="logo">
+          <img src="img/logo.png" alt="Краски в Орле" />
+        </div>
+        <ul class="header-contacts">
+          <li class="header-contacts-item">
+            <span class="icon-compass2"></span> г. Орел, ул. Комсомольская д.122
+          </li>
+          <li class="header-contacts-item">
+            <span class="icon-phone"></span>
+            <a href="tel:+71234567890" class="header-contacts-link">Тел: +7(123)456-78-90 </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="hero section container">
+        <div class="hero-wrapper">
+          <h1 class="hero-title">Магазин красок в Орле</h1>
+          <p class="hero-description">Большой выбор красок по приемлемым ценам.</p>
+        </div>
+      </section>
 
-<body>
-  <header class="header container">
+      <section class="advantages section container">
+        <h2 class="section-title">Наши преимущества</h2>
+        <ul class="advantages-grid">
+          <li class="advanteges-grid__item">
+            <span class="icon-rouble advantages-grid__icon"></span
+            ><span class="advanteges-grid__text">Низкие цены, большой ассортимент</span>
+          </li>
+          <li class="advanteges-grid__item">
+            <span class="icon-user-tie advantages-grid__icon"></span
+            ><span class="advanteges-grid__text">Проконсультируем по телефону</span>
+          </li>
+          <li class="advanteges-grid__item">
+            <span class="icon-eyedropper advantages-grid__icon"></span
+            ><span class="advanteges-grid__text">Коллеровка на профессиональном оборудовании.</span>
+          </li>
+        </ul>
+      </section>
 
-    <nav class="header-nav">
-      <div class="logo">
-        <img src="img/logo.png" alt="Краски в Орле" />
-      </div>
-      <ul class="header-contacts">
-        <li class="header-contacts-item"><span class="icon-compass2"></span> г. Орел, ул. Комсомольская д.122</li>
-        <li class="header-contacts-item">
-          <span class="icon-phone"></span>
-          <a href="tel:+71234567890" class="header-contacts-link">Тел: +7(123)456-78-90 </a>
-        </li>
-      </ul>
-    </nav>
-
-  </header>
-  <main class="main">
-
-    <section class="hero section container">
-      <div class="hero-wrapper">
-        <h1 class="hero-title">Магазин красок в Орле</h1>
-        <p class="hero-description">Большой выбор красок по приемлемым ценам.</p>
-      </div>
-    </section>
-
-    <section class="advantages section container">
-      <h2 class="section-title">Наши преимущества</h2>
-      <ul class="advantages-grid">
-        <li class="advanteges-grid__item">
-          <span class="icon-rouble advantages-grid__icon"></span><span class="advanteges-grid__text">Низкие цены,
-            большой ассортимент</span>
-        </li>
-        <li class="advanteges-grid__item">
-          <span class="icon-user-tie advantages-grid__icon"></span></span><span
-            class="advanteges-grid__text">Проконсультируем по
-            телефону</span>
-        </li>
-        <li class="advanteges-grid__item">
-          <span class="icon-eyedropper advantages-grid__icon"></span></span><span
-            class="advanteges-grid__text">Коллеровка на
-            профессиональном оборудовании.</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="catalog section container">
-      <h2 class="section-title">У нас вы можете купить</h2>
-      <div class="catalog__card-columns">
-        <div class="catalog__card">
-          <h3 class="catalog__card-title">Краски</h3>
-          <ul class="catalog__card-list">
-            <li class="catalog__card-item">Краски для внутренних работ</li>
-            <li class="catalog__card-item">Краски для наружных работ</li>
-            <li class="catalog__card-item">Краски для металла</li>
-            <li class="catalog__card-item">Краски для фасадов</li>
-            <li class="catalog__card-item">Покрытия для дерева</li>
-            <li class="catalog__card-item">Лаки</li>
-            <li class="catalog__card-item">Аэрозольные</li>
-          </ul>
+      <section class="catalog section container">
+        <h2 class="section-title">У нас вы можете купить</h2>
+        <div class="catalog__card-columns">
+          <div class="catalog__card">
+            <h3 class="catalog__card-title">Краски</h3>
+            <ul class="catalog__card-list">
+              <li class="catalog__card-item">Краски для внутренних работ</li>
+              <li class="catalog__card-item">Краски для наружных работ</li>
+              <li class="catalog__card-item">Краски для металла</li>
+              <li class="catalog__card-item">Краски для фасадов</li>
+              <li class="catalog__card-item">Покрытия для дерева</li>
+              <li class="catalog__card-item">Лаки</li>
+              <li class="catalog__card-item">Аэрозольные</li>
+            </ul>
           </div>
           <div class="catalog__card">
-          <h3 class="catalog__card-title">Средства для подготовки поверхности</h3>
-          <ul class="catalog__card-list">
-            <li class="catalog__card-item">Грунтовки</li>
-            <li class="catalog__card-item">Растворители</li>
-            <li class="catalog__card-item">Герметики/пены</li>
-            <li class="catalog__card-item">Средства для снятия обоев</li>
-            <li class="catalog__card-item">Смывка старой краски/клея</li>
-            <li class="catalog__card-item">Шпатлевки</li>
-          </ul>
-        </div>
+            <h3 class="catalog__card-title">Средства для подготовки поверхности</h3>
+            <ul class="catalog__card-list">
+              <li class="catalog__card-item">Грунтовки</li>
+              <li class="catalog__card-item">Растворители</li>
+              <li class="catalog__card-item">Герметики/пены</li>
+              <li class="catalog__card-item">Средства для снятия обоев</li>
+              <li class="catalog__card-item">Смывка старой краски/клея</li>
+              <li class="catalog__card-item">Шпатлевки</li>
+            </ul>
+          </div>
           <div class="catalog__card">
-          <h3 class="catalog__card-title">Инструменты для покраски</h3>
-          <ul class="catalog__card-list">
-            <li class="catalog__card-item">Кисти малярные</li>
-            <li class="catalog__card-item">Валики малярные</li>
-            <li class="catalog__card-item">Ванночки для краски</li>
-            <li class="catalog__card-item">Малярные ленты</li>
-            <li class="catalog__card-item">Средства индивидуальной защиты</li>
-          </ul>
+            <h3 class="catalog__card-title">Инструменты для покраски</h3>
+            <ul class="catalog__card-list">
+              <li class="catalog__card-item">Кисти малярные</li>
+              <li class="catalog__card-item">Валики малярные</li>
+              <li class="catalog__card-item">Ванночки для краски</li>
+              <li class="catalog__card-item">Малярные ленты</li>
+              <li class="catalog__card-item">Средства индивидуальной защиты</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="reviews section container">
-      <h2 class="section-title">Отзывы</h2>
-      <div class="reviews-grid">
-        <div class="reviews-item">
-          <blockquote>Брал краску для стен в детскую комнату, помогли подобрать краску и цвет коллеровки. Адекватные
-            цены, хорошее обслуживание, удачи магазину.</blockquote>
-          <cite>Андрей</cite>
+      <section class="reviews section container">
+        <h2 class="section-title">Отзывы</h2>
+        <div class="reviews-grid">
+          <div class="reviews-item">
+            <blockquote>
+              Брал краску для стен в детскую комнату, помогли подобрать краску и цвет коллеровки. Адекватные
+              цены, хорошее обслуживание, удачи магазину.
+            </blockquote>
+            <cite>Андрей</cite>
+          </div>
+          <div class="reviews-item">
+            <blockquote>
+              Покупала краску для обоев под покраску 9 литров на комнату 16 метров. Колеровали в светло-серый
+              цвет (спасибо коллеровщику за подбор цвета!) Красили в два слоя, осталось на дне банки. Слегка
+              разбавляли водой. Результат - супер! Слегка блестит, что неплохо.
+            </blockquote>
+            <cite>Татьяна</cite>
+          </div>
+          <div class="reviews-item">
+            <blockquote>
+              Хорошие цены и возможность выбора товаров, удобное расположение товаров в магазине!
+            </blockquote>
+            <cite>Ольга</cite>
+          </div>
         </div>
-        <div class="reviews-item">
-          <blockquote>Покупала краску для обоев под покраску 9 литров на комнату 16 метров. Колеровали в светло-серый
-            цвет
-            (спасибо коллеровщику за подбор цвета!) Красили в два слоя, осталось
-            на дне банки. Слегка разбавляли водой. Результат - супер! Слегка блестит, что неплохо.
+      </section>
 
-          </blockquote>
-          <cite>Татьяна</cite>
+      <section class="map container">
+        <h2 class="section-title">Магазин на карте</h2>
+        <div class="map-container">
+          <a
+            href="https://yandex.ru/maps/?um=constructor%3Ac1aa8f8195869141820f68020b766edeaa0a94306e708842ad2a0ea3e1de291b&amp;source=constructorStatic"
+            target="_blank"
+            ><img
+              src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Ac1aa8f8195869141820f68020b766edeaa0a94306e708842ad2a0ea3e1de291b&amp;width=600&amp;height=400&amp;lang=ru_RU"
+              alt="Карта - г. Орел, ул. Комсомольская д. 122"
+              style="border: 0"
+            />
+          </a>
         </div>
-        <div class="reviews-item">
-          <blockquote>Хорошие цены и возможность выбора товаров, удобное расположение товаров в магазине!</blockquote>
-          <cite>Ольга</cite>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section class="map container">
-      <h2 class="section-title">Магазин на карте</h2>
-      <div class="map-container">
-        <script type="text/javascript" charset="utf-8" async
-          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac1aa8f8195869141820f68020b766edeaa0a94306e708842ad2a0ea3e1de291b&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="page-footer container">
-    <nav class="header-nav footer-contacts">
-      <p class="footer-copy">&copy;2021 Mагазин Краски в Орле</p>
-      <ul class="header-contacts">
-        <li class="header-contacts-item"><span class="icon-compass2"></span> г. Орел, ул. Комсомольская д.122</li>
-        <li class="header-contacts-item">
-          <span class="icon-phone"></span>
-          <a href="tel:+71234567890" class="header-contacts-link">Тел: +7(123)456-78-90 </a>
-        </li>
-      </ul>
-    </nav>
-  </footer>
-
-</body>
-
+    <footer class="page-footer container">
+      <nav class="header-nav footer-contacts">
+        <p class="footer-copy">&copy;2021 Mагазин Краски в Орле</p>
+        <ul class="header-contacts">
+          <li class="header-contacts-item">
+            <span class="icon-compass2"></span> г. Орел, ул. Комсомольская д.122
+          </li>
+          <li class="header-contacts-item">
+            <span class="icon-phone"></span>
+            <a href="tel:+71234567890" class="header-contacts-link">Тел: +7(123)456-78-90 </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
